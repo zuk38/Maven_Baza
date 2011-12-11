@@ -6,7 +6,7 @@ import java.util.List;
 public class Miasto {
 	
 	private String nazwa;
-	private List<Firmy> lokale = new ArrayList<Firmy>();
+	public List<Firmy> lokale = new ArrayList<Firmy>();
 	
 
 	public Miasto(String nazwa){

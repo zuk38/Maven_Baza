@@ -29,6 +29,7 @@ public class Start {
 		tab[1]= "Quchnia SmaQ";
 		tab[2]= "ul. Zwirki 16";
 		Tczew.szukajKilku(tab);
+		
 	}
 
 }
