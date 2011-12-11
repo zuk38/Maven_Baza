@@ -36,3 +36,15 @@ public class AppTest
         assertTrue( true );
     }
 }
+
+    public void testdodajFirme() {
+		
+		Miasto tcz = new Miasto("Tczew");
+		assertNotNull(tcz);
+		assertEquals("Tczew", tcz.getNazwa());
+		
+		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
+		assertNotNull(tcz.lokale.get(0));
+		
+	
+	}
