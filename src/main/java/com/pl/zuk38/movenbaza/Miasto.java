@@ -34,29 +34,19 @@ public class Miasto {
 		System.out.println("--------------------");
 
 	}
-	public int szukaj(String tekst){
-		int nr=-1;
+	public Firmy szukaj(String tekst){
+		
+		Firmy a = null;
 		for(Firmy lista: lokale){
-			nr++;
+			
 			if(lista.getNazwaF().equals(tekst) || lista.getAdresF().equals(tekst)) {
-				System.out.println("Pozycja na liscie nr: " + nr);
 				System.out.println("Restauracja: " + lista.getNazwaF() + " " + lista.getAdresF() + " znajdujaca sie w: " + getNazwa());
+				a = lista;
 			}			
 		}
-		return nr;
+		return a;
 	}
 	
-	public int szukajKilku(String[] tab ){
-		int nr=-1;
-				for(Firmy lista: lokale){
-			nr++;
-			if(lista.getNazwaF().equals(tab[nr]) || lista.getAdresF().equals(tab[nr])) {
-				System.out.println("Pozycja na liscie nr: " + nr);
-				System.out.println("Restauracja: " + lista.getNazwaF() + " " + lista.getAdresF() + " znajdujaca sie w: " + getNazwa());
-			}			
-		}
-		return nr;
-	}
 	
 	public void edytuj(String doZmiany, String NowaWartosc){
 		for(Firmy lista : lokale){
@@ -70,6 +60,12 @@ public class Miasto {
 										System.out.println("Zmieniono adres Firmy");
 			}
 		}
+	}
+	public void edytujObjekt(String doZmiany, String NowaWartosc){
+		Firmy a;
+		a = szukaj(doZmiany);
+		a.setNazwaF(NowaWartosc);
+		System.out.println("ZMIANA!" + a.getNazwaF());
 	}
 
 	public void usun(String doUsuniencia) {		

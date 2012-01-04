@@ -24,11 +24,7 @@ public class Start {
 		Tczew.usunPoz(2);
 		Tczew.wyswietlListe();
 		
-		String[] tab = new String[20];
-		tab[0]= "Roma";
-		tab[1]= "Quchnia SmaQ";
-		tab[2]= "ul. Zwirki 16";
-		Tczew.szukajKilku(tab);
+
 	}
 
 }
