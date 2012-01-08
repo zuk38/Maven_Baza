@@ -26,9 +26,9 @@ public class Start {
 		Tczew.usunPoz(2);
 		Tczew.wyswietlListe();
 		
-		Firmy p = Tczew.getLokale().get(0);
-		FirmyDBManager db = new FirmyDBManager();
-		db.addFirmy(p);
+		//Firmy p = Tczew.getLokale().get(0);
+		//FirmyDBManager db = new FirmyDBManager();
+		//db.addFirmy(p);
 		
 	}
 
