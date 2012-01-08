@@ -35,7 +35,7 @@ public class AppTest
     {
         assertTrue( true );
     }
-}
+
 
     public void testdodajFirme() {
 		
@@ -44,7 +44,8 @@ public class AppTest
 		assertEquals("Tczew", tcz.getNazwa());
 		
 		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
-		assertNotNull(tcz.lokale.get(0));
+		assertNotNull(tcz.getLokale().get(0));
 		
 	
 	}
+}
