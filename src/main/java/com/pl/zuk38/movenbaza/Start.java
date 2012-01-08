@@ -26,11 +26,10 @@ public class Start {
 		Tczew.usunPoz(2);
 		Tczew.wyswietlListe();
 		
-		Firmy p = Tczew.szukaj("Roma");
+		Firmy p = Tczew.getLokale().get(0);
 		FirmyDBManager db = new FirmyDBManager();
 		db.addFirmy(p);
-
-
+		
 	}
 
 }

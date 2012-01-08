@@ -19,7 +19,7 @@
     <property name="basedir" value="/home/student/git/Maven_Baza"/>
     <property name="java.endorsed.dirs" value="/opt/devel/jdk1.6.0_27/jre/lib/endorsed"/>
     <property name="os.arch" value="i386"/>
-    <property name="surefire.real.class.path" value="/home/student/git/Maven_Baza/target/surefire/surefirebooter4570060565617619341.jar"/>
+    <property name="surefire.real.class.path" value="/home/student/git/Maven_Baza/target/surefire/surefirebooter2159473217783211909.jar"/>
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="line.separator" value="
 "/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Linux"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/opt/devel/jdk1.6.0_27/jre/lib/i386/client:/opt/devel/jdk1.6.0_27/jre/lib/i386:/opt/devel/jdk1.6.0_27/jre/../lib/i386:/opt/devel/jdk1.6.0_27/jre/lib/i386/client:/opt/devel/jdk1.6.0_27/jre/lib/i386::/usr/java/packages/lib/i386:/lib:/usr/lib"/>
-    <property name="surefire.test.class.path" value="/home/student/git/Maven_Baza/target/test-classes:/home/student/git/Maven_Baza/target/classes:/opt/devel/maven_repo/junit/junit/4.9/junit-4.9.jar:/opt/devel/maven_repo/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/opt/devel/maven_repo/org/hsqldb/hsqldb/2.2.4/hsqldb-2.2.4.jar:"/>
+    <property name="surefire.test.class.path" value="/home/student/git/Maven_Baza/target/test-classes:/home/student/git/Maven_Baza/target/classes:/opt/devel/maven_repo/junit/junit/4.10/junit-4.10.jar:/opt/devel/maven_repo/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/opt/devel/maven_repo/org/hsqldb/hsqldb/2.2.4/hsqldb-2.2.4.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot Client Compiler"/>
@@ -38,11 +38,11 @@
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.specification.version" value="1.6"/>
     <property name="user.name" value="student"/>
-    <property name="java.class.path" value="/home/student/git/Maven_Baza/target/test-classes:/home/student/git/Maven_Baza/target/classes:/opt/devel/maven_repo/junit/junit/4.9/junit-4.9.jar:/opt/devel/maven_repo/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/opt/devel/maven_repo/org/hsqldb/hsqldb/2.2.4/hsqldb-2.2.4.jar:"/>
+    <property name="java.class.path" value="/home/student/git/Maven_Baza/target/test-classes:/home/student/git/Maven_Baza/target/classes:/opt/devel/maven_repo/junit/junit/4.10/junit-4.10.jar:/opt/devel/maven_repo/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/opt/devel/maven_repo/org/hsqldb/hsqldb/2.2.4/hsqldb-2.2.4.jar:"/>
     <property name="java.vm.specification.version" value="1.0"/>
     <property name="sun.arch.data.model" value="32"/>
     <property name="java.home" value="/opt/devel/jdk1.6.0_27/jre"/>
-    <property name="sun.java.command" value="/home/student/git/Maven_Baza/target/surefire/surefirebooter4570060565617619341.jar /home/student/git/Maven_Baza/target/surefire/surefire1336401589337843936tmp /home/student/git/Maven_Baza/target/surefire/surefire3201308315841933764tmp"/>
+    <property name="sun.java.command" value="/home/student/git/Maven_Baza/target/surefire/surefirebooter2159473217783211909.jar /home/student/git/Maven_Baza/target/surefire/surefire936271660317468277tmp /home/student/git/Maven_Baza/target/surefire/surefire1952868062072755955tmp"/>
     <property name="java.specification.vendor" value="Sun Microsystems Inc."/>
     <property name="user.language" value="pl"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>

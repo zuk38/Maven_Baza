@@ -1,5 +1,8 @@
 package com.pl.zuk38.movenbaza;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -44,8 +47,18 @@ public class AppTest
 		assertEquals("Tczew", tcz.getNazwa());
 		
 		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
-		assertNotNull(tcz.getLokale().get(0));
+		assertNotNull(tcz.wyswietlFirme(0));
+		}
+   
+    public void testWyswietlFirmy(){
+    	Miasto tcz = new Miasto("Tczew");
+		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
 		
-	
-	}
+		List<Firmy> lokale = new ArrayList<Firmy>();
+		
+		for( Firmy f : lokale) assertNotNull(f);
+
+    	//assertNotNull(tcz.wyswietlFirme(0));		
+		}
+    
 }
