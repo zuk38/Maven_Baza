@@ -1,6 +1,7 @@
 package com.pl.zuk38.movenbaza;
 
-import pl.com.zuk38.services.FirmyDBManager;
+import com.pl.zuk38.services.FirmyDBManager;
+
 
 public class Start {
 
@@ -26,9 +27,9 @@ public class Start {
 		Tczew.usunPoz(2);
 		Tczew.wyswietlListe();
 		
-		//Firmy p = Tczew.getLokale().get(0);
-		//FirmyDBManager db = new FirmyDBManager();
-		//db.addFirmy(p);
+		Firmy p = Tczew.pobFirme(0);
+		FirmyDBManager db = new FirmyDBManager();
+		db.addFirmy(p);
 		
 	}
 

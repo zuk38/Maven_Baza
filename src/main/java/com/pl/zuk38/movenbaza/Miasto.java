@@ -77,9 +77,10 @@ public class Miasto {
 		lokale.remove(pozycja);
 		
 	}
-	public Firmy wyswietlFirme(int i){
+	public Firmy pobFirme(int i){
 		return lokale.get(i);
 	}
+
 
 }	
 

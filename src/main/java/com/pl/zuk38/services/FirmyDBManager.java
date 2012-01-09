@@ -1,4 +1,4 @@
-package pl.com.zuk38.services;
+package com.pl.zuk38.services;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,6 +8,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.pl.zuk38.movenbaza.Firmy;
 
 

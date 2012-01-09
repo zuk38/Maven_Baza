@@ -47,7 +47,7 @@ public class AppTest
 		assertEquals("Tczew", tcz.getNazwa());
 		
 		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
-		assertNotNull(tcz.wyswietlFirme(0));
+		assertNotNull(tcz.pobFirme(0));
 		}
    
     public void testWyswietlFirmy(){
