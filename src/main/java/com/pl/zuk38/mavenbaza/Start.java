@@ -21,7 +21,8 @@ public class Start {
 		Tczew.edytuj("ul. 3 Maja 45", "ul. Gdanska 32");
 		Tczew.wyswietlListe();
 		
-		Tczew.usun("Pasi Brzuszek");		
+		Tczew.usun("Pasi Brzuszek");
+		Tczew.zmienTyp("Roma", TypyLokali.disco);
 		Tczew.wyswietlListe();
 		
 		Tczew.usunPoz(2);
