@@ -68,7 +68,9 @@ public class Miasto {
 	public void usun(String doUsuniencia) {		
 		lokale.remove(szukaj(doUsuniencia));
 	}
-	
+	public void zmienTyp(String nazwa, TypyLokali typ){
+	szukaj(nazwa).setTyp(typ);
+	}
 	public void usunPoz(int pozycja){		
 		lokale.remove(pozycja);		
 	}
