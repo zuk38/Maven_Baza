@@ -35,10 +35,10 @@ public class Miasto {
 
 	}
 	public Firmy szukaj(String tekst){
-		for(Firmy lista: lokale){
+		for(Firmy lok: lokale){
 			
-			if(lista.getNazwaF().equals(tekst) || lista.getAdresF().equals(tekst)) {
-					return lista;
+			if(lok.getNazwaF().equals(tekst) || lok.getAdresF().equals(tekst)) {
+					return lok;
 			}		
 		}
 		return null;
@@ -47,14 +47,14 @@ public class Miasto {
 	
 	
 	public void edytuj(String doZmiany, String NowaWartosc){
-		for(Firmy lista : lokale){
-			if(lista.getNazwaF().equals(doZmiany)) {
-										lista.setNazwaF(NowaWartosc);
+		for(Firmy lok : lokale){
+			if(lok.getNazwaF().equals(doZmiany)) {
+										lok.setNazwaF(NowaWartosc);
 										System.out.println("Zmieniono nazwe Firmy");
 			}
 			
-			if(lista.getAdresF().equals(doZmiany)) {
-										lista.setAdresF(NowaWartosc);
+			if(lok.getAdresF().equals(doZmiany)) {
+										lok.setAdresF(NowaWartosc);
 										System.out.println("Zmieniono adres Firmy");
 			}
 		}
@@ -63,7 +63,6 @@ public class Miasto {
 		Firmy a;
 		a = szukaj(doZmiany);
 		a.setNazwaF(NowaWartosc);
-		System.out.println("ZMIANA!" + a.getNazwaF());
 	}
 
 	public void usun(String doUsuniencia) {		
