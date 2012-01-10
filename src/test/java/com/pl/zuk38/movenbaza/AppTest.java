@@ -3,6 +3,9 @@ package com.pl.zuk38.movenbaza;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.pl.zuk38.mavenbaza.Firmy;
+import com.pl.zuk38.mavenbaza.Miasto;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;

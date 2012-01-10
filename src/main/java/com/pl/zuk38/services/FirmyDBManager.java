@@ -9,7 +9,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.pl.zuk38.movenbaza.Firmy;
+import com.pl.zuk38.mavenbaza.Firmy;
 
 
 

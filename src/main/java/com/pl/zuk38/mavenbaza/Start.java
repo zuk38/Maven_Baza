@@ -1,4 +1,4 @@
-package com.pl.zuk38.movenbaza;
+package com.pl.zuk38.mavenbaza;
 
 import com.pl.zuk38.services.FirmyDBManager;
 

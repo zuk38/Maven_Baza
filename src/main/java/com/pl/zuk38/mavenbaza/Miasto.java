@@ -1,4 +1,4 @@
-package com.pl.zuk38.movenbaza;
+package com.pl.zuk38.mavenbaza;
 
 import java.util.ArrayList;
 import java.util.List;
