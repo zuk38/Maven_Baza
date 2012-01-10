@@ -8,10 +8,10 @@ public class Start {
 	public static void main(String[] args) {
 				
 		Miasto Tczew = new Miasto("Tczew");
-		Tczew.dodajFirme("Zajazd Roma", "ul. Armii Krajowej 6");
-		Tczew.dodajFirme("Pasi Brzuszek", "ul. 3 Maja 45");
-		Tczew.dodajFirme("Quchnia Smaq", "ul. Krolowej Jadwigi 17");
-		Tczew.dodajFirme("DaGrasso", "ul. Zwirki 16");
+		Tczew.dodajFirme("Zajazd Roma", "ul. Armii Krajowej 6", TypyLokali.restauracja);
+		Tczew.dodajFirme("Pasi Brzuszek", "ul. 3 Maja 45", TypyLokali.pizzeria);
+		Tczew.dodajFirme("Quchnia Smaq", "ul. Krolowej Jadwigi 17", TypyLokali.restauracja);
+		Tczew.dodajFirme("DaGrasso", "ul. Zwirki 16", TypyLokali.pizzeria);
 		
 		Tczew.wyswietlListe();
 		

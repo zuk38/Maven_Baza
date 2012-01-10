@@ -21,9 +21,9 @@ public class Miasto {
 		return nazwa;
 	}
 	
-	public void dodajFirme(String nazwaF, String adresF){
+	public void dodajFirme(String nazwaF, String adresF, TypyLokali typ){
 		
-		lokale.add(new Firmy(nazwaF, adresF));
+		lokale.add(new Firmy(nazwaF, adresF, typ));
 	}	
 	public void wyswietlListe(){
 		System.out.println("--------------------");
@@ -35,16 +35,14 @@ public class Miasto {
 
 	}
 	public Firmy szukaj(String tekst){
-		
-		Firmy a = null;
 		for(Firmy lista: lokale){
 			
 			if(lista.getNazwaF().equals(tekst) || lista.getAdresF().equals(tekst)) {
-				System.out.println("Restauracja: " + lista.getNazwaF() + " " + lista.getAdresF() + " znajdujaca sie w: " + getNazwa());
-				a = lista;
-			}			
+					return lista;
+			}		
 		}
-		return a;
+		return null;
+		
 	}
 	
 	
@@ -69,13 +67,11 @@ public class Miasto {
 	}
 
 	public void usun(String doUsuniencia) {		
-		System.out.println(lokale.remove(szukaj(doUsuniencia)) + " zostala usunienta!");
-		}
+		lokale.remove(szukaj(doUsuniencia));
+	}
 	
 	public void usunPoz(int pozycja){		
-		System.out.println("Firma : " + lokale.get(pozycja).getNazwaF() + " zostanie usunienta.");
-		lokale.remove(pozycja);
-		
+		lokale.remove(pozycja);		
 	}
 	public Firmy pobFirme(int i){
 		return lokale.get(i);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.039" errors="0" skipped="0" tests="3" name="com.pl.zuk38.movenbaza.AppTest">
+<testsuite failures="0" time="0.041" errors="0" skipped="0" tests="3" name="com.pl.zuk38.movenbaza.AppTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jre6\bin"/>
@@ -19,7 +19,7 @@
     <property name="basedir" value="C:\Users\Zuk\git\Maven_Baza1"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jre6\lib\endorsed"/>
     <property name="os.arch" value="x86"/>
-    <property name="surefire.real.class.path" value="C:\Users\Zuk\git\Maven_Baza1\target\surefire\surefirebooter5951874702836310551.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Zuk\git\Maven_Baza1\target\surefire\surefirebooter2676696261952740287.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\Zuk\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -60,6 +60,6 @@
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
   <testcase time="0.002" classname="com.pl.zuk38.movenbaza.AppTest" name="testApp"/>
-  <testcase time="0.002" classname="com.pl.zuk38.movenbaza.AppTest" name="testdodajFirme"/>
+  <testcase time="0.004" classname="com.pl.zuk38.movenbaza.AppTest" name="testdodajFirme"/>
   <testcase time="0" classname="com.pl.zuk38.movenbaza.AppTest" name="testWyswietlFirmy"/>
 </testsuite>

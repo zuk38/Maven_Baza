@@ -95,7 +95,7 @@ public class FirmyDBManager {
 
 				while(rs.next())
 				{
-					firmy.add(new Firmy(rs.getString("name"), null));
+					firmy.add(new Firmy(rs.getString("name"), null, null));
 				}
 
 			} catch (SQLException e) {

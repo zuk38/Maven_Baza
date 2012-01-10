@@ -4,15 +4,17 @@ public class Firmy {
 
 	private String nazwaF;
 	private String adresF;
+	private TypyLokali typ;
 	
-	public Firmy(String nazwaF, String adresF){
+	public Firmy(String nazwaF, String adresF, TypyLokali typ){
 		this.nazwaF=nazwaF;
 		this.adresF=adresF;
+		this.typ=typ;
 	}
 	
 	public void wyswietlF() {
 
-		System.out.println("Nazwa: " + nazwaF + " Adres: " + adresF);
+		System.out.println("Nazwa: " + nazwaF + " Adres: " + adresF + " Typ: " + typ);
 	}
 	
 	public String getNazwaF() {
@@ -26,5 +28,11 @@ public class Firmy {
 	}
 	public void setAdresF(String adresF) {
 		this.adresF = adresF;
+	}
+	public TypyLokali getTyp() {
+		return typ;
+	}
+	public void setTyp(TypyLokali typ) {
+		this.typ = typ;
 	}
 }

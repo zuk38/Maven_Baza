@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.pl.zuk38.mavenbaza.Firmy;
 import com.pl.zuk38.mavenbaza.Miasto;
+import com.pl.zuk38.mavenbaza.TypyLokali;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -49,13 +50,13 @@ public class AppTest
 		assertNotNull(tcz);
 		assertEquals("Tczew", tcz.getNazwa());
 		
-		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
+		tcz.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.disco);
 		assertNotNull(tcz.pobFirme(0));
 		}
    
     public void testWyswietlFirmy(){
     	Miasto tcz = new Miasto("Tczew");
-		tcz.dodajFirme("FirmaTest", "ul. testowa 1");
+		tcz.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.pizzeria);
 		
 		List<Firmy> lokale = new ArrayList<Firmy>();
 		
