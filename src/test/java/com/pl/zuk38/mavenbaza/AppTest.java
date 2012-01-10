@@ -55,7 +55,7 @@ public class AppTest
    
     public void test2WyswietlFirmy(){	
     	testowe.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.disco);
-		assertNotNull(testowe.pobFirme(0).getNazwaF());
+		for( Firmy f : testowe.getLokale()) assertNotNull(f);
 	
 		}
     public void test3szukaFirmy(){

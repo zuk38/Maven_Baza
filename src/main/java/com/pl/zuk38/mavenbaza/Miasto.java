@@ -21,6 +21,10 @@ public class Miasto {
 		return nazwa;
 	}
 	
+	public List<Firmy> getLokale() {
+		return lokale;
+	}
+	
 	public void dodajFirme(String nazwaF, String adresF, TypyLokali typ){
 		
 		lokale.add(new Firmy(nazwaF, adresF, typ));
