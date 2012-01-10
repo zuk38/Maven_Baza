@@ -17,6 +17,8 @@ import junit.framework.TestSuite;
 public class AppTest
     extends TestCase
 {
+	private Miasto testowe = new Miasto("Testowe");
+	
     /**
      * Create the test case
      *
@@ -45,15 +47,15 @@ public class AppTest
     
     public void test1dodajFirme() {
 		assertNotNull(testowe);
-		assertTrue(testowe.getNazwa()=="Testowe");
+		assertEquals(testowe.getNazwa(),"Testowe");
 		
 		testowe.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.disco);
 		assertNotNull(testowe.pobFirme(0));
 		}
    
-    public void test2WyswietlFirmy(){			
-			
-		for( Firmy f : lokale) assertNotNull(f);
+    public void test2WyswietlFirmy(){	
+    	testowe.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.disco);
+		assertNotNull(testowe.pobFirme(0).getNazwaF());
 	
 		}
     public void test3szukaFirmy(){
@@ -67,7 +69,7 @@ public class AppTest
     	testowe.dodajFirme("FirmaTest", "ul. testowa 1", TypyLokali.disco);
     	assertNotNull(testowe.pobFirme(0));
     	testowe.usunPoz(0);
-    	for( Firmy f : lokale) assertNull(f);
+    	assertNull(testowe.szukaj("FirmaTest"));
     }
     public void test5edytuj(){
     	
@@ -76,8 +78,5 @@ public class AppTest
     	assertTrue(testowe.pobFirme(0).getNazwaF()=="Firma");
     }
     
-    private Miasto testowe = new Miasto("Testowe");
-    private List<Firmy> lokale = new ArrayList<Firmy>();
-
-    
+   
 }
