@@ -49,8 +49,12 @@ public class Start {
 		session.beginTransaction();
 		
 		session.persist(Gniew);
+		
+		Firmy f3 = (Firmy) session.get(Firmy.class, 1);
+		
 		session.getTransaction().commit();
 		
+		System.out.println(f3.getNazwaF() + " " + f3.getAdresF() + " " + f3.getTyp());
 		
 	}
 
