@@ -1,10 +1,32 @@
 package com.pl.zuk38.mavenbaza;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class Firmy {
+	
+	@Id
+	@GeneratedValue
+	private int id;
 
 	private String nazwaF;
 	private String adresF;
+	
+	@ManyToOne
+	private Miasto zawiera;
+	
+	public Miasto getZawiera() {
+		return zawiera;
+	}
+
+	public void setZawiera(Miasto zawiera) {
+		this.zawiera = zawiera;
+	}
 	private TypyLokali typ;
+	
 	
 	public Firmy(String nazwaF, String adresF, TypyLokali typ){
 		this.nazwaF=nazwaF;

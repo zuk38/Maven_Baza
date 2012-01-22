@@ -3,9 +3,22 @@ package com.pl.zuk38.mavenbaza;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+
+import javax.persistence.Entity;
+
+@Entity
 public class Miasto {
 	
+	@Id
+	@GeneratedValue
+	private int id;
+	
 	private String nazwa;
+	
+	@OneToMany(mappedBy="zawiera", cascade=javax.persistence.CascadeType.PERSIST)
 	private List<Firmy> lokale = new ArrayList<Firmy>();
 	
 
@@ -28,6 +41,11 @@ public class Miasto {
 	public void dodajFirme(String nazwaF, String adresF, TypyLokali typ){
 		
 		lokale.add(new Firmy(nazwaF, adresF, typ));
+	}
+	
+	public void dodajFirmeObjekt(Firmy f){
+		
+		lokale.add(f);
 	}	
 	public void wyswietlListe(){
 		System.out.println("--------------------");

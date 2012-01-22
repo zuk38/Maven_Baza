@@ -1,5 +1,9 @@
 package com.pl.zuk38.mavenbaza;
 
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
 import com.pl.zuk38.services.FirmyDBManager;
 
 
@@ -29,8 +33,24 @@ public class Start {
 		Tczew.wyswietlListe();
 		
 		Firmy p = Tczew.pobFirme(0);
-		FirmyDBManager db = new FirmyDBManager();
-		db.addFirmy(p);
+		//FirmyDBManager db = new FirmyDBManager();
+		//db.addFirmy(p);
+		
+		Miasto Gniew = new Miasto("Gniew");
+		Firmy f1 = new Firmy("Roma", "ul. aaa 1" , TypyLokali.disco);
+		Firmy f2 = new Firmy("Zajazd", "ul. bbb 1" , TypyLokali.pizzeria);
+		
+		Gniew.dodajFirmeObjekt(f1);
+		Gniew.dodajFirmeObjekt(f2);
+		
+		
+		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+		Session session = sessionFactory.openSession();
+		session.beginTransaction();
+		
+		session.persist(Gniew);
+		session.getTransaction().commit();
+		
 		
 	}
 
