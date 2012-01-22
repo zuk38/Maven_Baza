@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.Table;
 
 import javax.persistence.Entity;
 
@@ -44,8 +45,15 @@ public class Miasto {
 	}
 	
 	public void dodajFirmeObjekt(Firmy f){
-		
+
 		lokale.add(f);
+	}	
+	
+	public void dodajKilkaFirmObjekt(Firmy[] tab){
+		
+		for(int i=0; i<tab.length; i++){
+		lokale.add(tab[i]);
+		}
 	}	
 	public void wyswietlListe(){
 		System.out.println("--------------------");

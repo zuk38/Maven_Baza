@@ -32,7 +32,19 @@ public class Start {
 		Tczew.usunPoz(2);
 		Tczew.wyswietlListe();
 		
-		Firmy p = Tczew.pobFirme(0);
+		Firmy tab[] = new Firmy[3];
+		tab[0] = new Firmy ("A", "ul. aaa 1" , TypyLokali.pizzeria);
+		tab[1]= new Firmy("B", "ul. aaa 1" , TypyLokali.pub);
+		tab[2]= new Firmy("C", "ul. aaa 1" , TypyLokali.restauracja);
+		
+		Tczew.dodajKilkaFirmObjekt(tab);
+		
+		//System.out.println("Wynik wyszukiwania: " + Tczew.szukaj("aaa"));
+		
+		
+		Tczew.wyswietlListe();
+		
+		//Firmy p = Tczew.pobFirme(0);
 		//FirmyDBManager db = new FirmyDBManager();
 		//db.addFirmy(p);
 		
